@@ -14,15 +14,18 @@
         <h1>Elenchos</h1>
     </header>
     <div id="menu">
-        <nav>
-            <p>Dashbord</p>
-            <p>Mês atual</p>
-            <p>Relatórios</p>
-        </nav>
+        <aside>
+            <nav>
+                <p>Dashbord</p>
+                <p>Mês atual</p>
+                <p>Relatórios</p>
+            </nav>
+        </aside>
     </div>
+
     <main>
         <div>
-            <table>
+            <table id="caixa">
                 <tr>
                     <td>Caixa atual</td>
                     <td>320</td>
@@ -30,56 +33,52 @@
             </table>
         </div>
         <div id="entradas-saidas">
-            <div id="saldos">
-                <table>
-                    <caption>Saldos</caption>
-                    <thead>
-                        <th>Conta</th>
-                        <th>Valor</th>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Conta 1</td>
-                            <td>2300</td>
-                        </tr>
-                        <tr>
-                            <td>Conta 2</td>
-                            <td>1020</td>
-                        </tr>
-                    </tbody>
-                    <tfoot>
-                        <tr>
-                            <td>Total</td>
-                            <td>3320</td>
-                        </tr>
-                    </tfoot>
-                </table>
-            </div>
-            <div id="gastos">
-                <table>
-                    <caption>Gastos</caption>
-                    <thead>
-                        <tr>
-                            <td>Saída</td>
-                            <td>Valor</td>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Fatura cartão</td>
-                            <td>1800</td>
-                        </tr>
-                        <td>Mês atual</td>
-                        <td>1200</td>
-                    </tbody>
-                    <tfoot>
-                        <tr>
-                            <td>Total</td>
-                            <td>3000</td>
-                        </tr>
-                    </tfoot>
-                </table>
-            </div>
+            <table id="saldos">
+                <caption>Saldos</caption>
+                <thead>
+                    <th>Conta</th>
+                    <th>Valor</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Conta 1</td>
+                        <td>2300</td>
+                    </tr>
+                    <tr>
+                        <td>Conta 2</td>
+                        <td>1020</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td>Total</td>
+                        <td>3320</td>
+                    </tr>
+                </tfoot>
+            </table>
+            <table id="gastos">
+                <caption>Gastos</caption>
+                <thead>
+                    <tr>
+                        <td>Saída</td>
+                        <td>Valor</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Fatura cartão</td>
+                        <td>1800</td>
+                    </tr>
+                    <td>Mês atual</td>
+                    <td>1200</td>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td>Total</td>
+                        <td>3000</td>
+                    </tr>
+                </tfoot>
+            </table>
         </div>
     </main>
 </body>
