@@ -5,82 +5,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elenchos - Resumo</title>
-    <link rel="stylesheet" href="style/style-resumo.css">
+    <title>Elenchos - Login</title>
+    <link rel="stylesheet" href="style/style-login.css">
     <link rel="shortcut icon" href="./imagens/favicon.ico" type="image/x-icon">
 </head>
 
 <body>
-    <header>
-        <img src="imagens/elenchos-logotipo.png" alt="Elenchos" id="logotipo">
-        <p>Controle de finanças pessoais</p>
-    </header>
-    <nav>
-        <a href="index.html" class="menu" id="resumo">Resumo</a>
-        <a href="mes-atual.html" class="menu" id="mes-atual">Mês atual</a>
-        <a href="relatorios.html" class="menu" id="relatorios">Relatórios</a>
-        <a href="login.html" class="menu" id="sair">Sair</a>
-    </nav>
     <main>
-        <div id="dashbords">
-            <div id="saldos">
-                <table>
-                    <caption>Saldos</caption>
-                    <thead>
-                        <th>Conta</th>
-                        <th>Valor</th>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Conta 1</td>
-                            <td>R$2.000,00</td>
-                        </tr>
-                        <tr>
-                            <td>Conta 3</td>
-                            <td>R$2.300,00</td>
-                        </tr>
-                    </tbody>
-                    <tfoot>
-                        <tr>
-                            <td>Total</td>
-                            <td>R$4.300,00</td>
-                        </tr>
-                    </tfoot>
-                </table>
-            </div>
-            <div id="gastos">
-                <table>
-                    <caption>Gastos</caption>
-                    <thead>
-                        <th>Descrição</th>
-                        <th>Valor</th>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Fatura cartão</td>
-                            <td>R$1.200,00</td>
-                        </tr>
-                        <tr>
-                            <td>Mês atual</td>
-                            <td>R$2.800,00</td>
-                        </tr>
-                    </tbody>
-                    <tfoot>
-                        <tr>
-                            <td>Total</td>
-                            <td>R$4000,00</td>
-                        </tr>
-                    </tfoot>
-                </table>
-            </div>
-        </div>
-        <div id="caixa">
-            <p>Caixa atual: R$300,00</p>
-        </div>
+        <section>
+            <img src="imagens/elenchos-logotipo.png" alt="Elenchos" id="logotipo">
+            <p>Controle de finanças pessoais</p>
+        </section>
+        <form>
+            <p>Login</p>
+            <input type="text" placeholder=" Email" name="login" id="login">
+            <input type="password" placeholder=" Senha" id="senha">
+            <input type="submit" value="Entrar" onclick="logar(); return false">
+        </form>
+        <hr>
+        <section id="nova-conta">
+            <p>Ainda não tem login?</p>
+            <button>Criar nova conta</button>
+        </section>
     </main>
     <footer>
-        <p>&copy; 2022, <a href="https://github.com/richard7dias" target="_blank">Richard Oliveira</a>.</p>
+        <p>&copy; 2022 - <a href="https://github.com/richard7dias" target="_blank">Richard Oliveira</a></p>
     </footer>
+    <script src="script/script-login.js"></script>
 </body>
 
 </html>
