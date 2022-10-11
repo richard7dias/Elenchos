@@ -5,9 +5,9 @@
 :root {
     --cor1: #0A37CC;
     --cor2: #096FAB;
-    --cor3: #09AB61;
-    --cor4: #00C3BD;
-    --cor5: #00C717;
+    --cor3: #;
+    --cor4: #;
+    --cor5: #;
     --cor6: #f3f3f3;
     --cor7: #e6e6e6;
     --sombra: #0000003b;
@@ -19,6 +19,12 @@
 * {
     margin: 0px;
     padding: 0px;
+    font-family: var(--fonte-padrao);
+}
+
+body {
+    background-color: var(--cor6);
+    color: var(--cor2);
 }
 
 header {
@@ -73,10 +79,6 @@ nav>a:active {
     text-decoration: none;
 }
 
-#sair {
-    margin-left: 390px;
-}
-
 main {
     padding: 20px;
     min-width: 380px;
@@ -110,12 +112,6 @@ main {
 #gastos {
     display: inline-block;
     width: 49%;
-}
-
-body {
-    font-family: var(--fonte-padrao);
-    background-color: var(--cor6);
-    color: var(--cor2);
 }
 
 table {
@@ -169,6 +165,5 @@ footer a {
 }
 
 footer a:hover {
-    color: var(--cor1);
     text-decoration: underline;
 }

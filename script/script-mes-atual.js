@@ -6,5 +6,5 @@ let valor = Number(val.value)
 let lancamentos = []
 
 function lancar() {
-
+    
 }

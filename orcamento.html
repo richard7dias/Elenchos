@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -5,8 +6,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elenchos - Mês Atual</title>
-    <link rel="stylesheet" href="style/style-mes-atual.css">
+    <title>Elenchos - Relatórios</title>
+    <link rel="stylesheet" href="style/style-orcamento.css">
     <link rel="shortcut icon" href="./imagens/favicon.ico" type="image/x-icon">
 </head>
 
@@ -17,27 +18,19 @@
     </header>
     <nav>
         <a href="resumo.html" class="menu" id="resumo">Resumo</a>
-        <a href="mes-atual.html" class="menu" id="mes-atual">Mês atual</a>
+        <a href="lancar-gasto.html" class="menu" id="lancar-gasto">Lançar Gasto</a>
+        <a href="orcamento.html" class="menu" id="orcamento">Orçamento</a>
         <a href="relatorios.html" class="menu" id="relatorios">Relatórios</a>
         <a href="index.html" class="menu" id="sair">Sair</a>
     </nav>
     <main>
-        <div id="lancamento">
-            <h3>Lançar gastos</h3>
-            <p>Descrição: <input type="text" name="descricao" id="descricao"></p>
-            <p>Data: <input type="date" name="data" id="data"></p>
-            <p>Categria: <input type="text" name="categoria" id="categoria"></p>
-            <p>Valor: R$<input type="number" name="valor" id="valor"></p>
-            <input type="button" value="Lançar" onclick="lancar()"> <br>
-        </div>
-        <div id="orcamento">
+        <div id="orcamento-main">
             <h3>Orçamento</h3>
         </div>
     </main>
     <footer>
         <p>&copy; 2022, <a href="https://github.com/richard7dias" target="_blank">Richard Oliveira</a>.</p>
     </footer>
-    <script src="script/script-mes-atual.js"></script>
 </body>
 
 </html>

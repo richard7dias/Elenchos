@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elenchos - Lançar Gasto</title>
+    <link rel="stylesheet" href="style/style-lancar-gasto.css">
+    <link rel="shortcut icon" href="./imagens/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="script/script-mes-atual.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <img src="imagens/elenchos-logotipo.png" alt="Elenchos" id="logotipo">
+        <p>Controle de finanças pessoais</p>
+    </header>
+    <nav>
+        <a href="resumo.html" class="menu" id="resumo">Resumo</a>
+        <a href="lancar-gasto.html" class="menu" id="lancar-gasto">Lançar Gasto</a>
+        <a href="orcamento.html" class="menu" id="orcamento">Orçamento</a>
+        <a href="relatorios.html" class="menu" id="relatorios">Relatórios</a>
+        <a href="index.html" class="menu" id="sair">Sair</a>
+    </nav>
+    <main>
+        <form id="lancamento">
+            <h3>Lançar gasto</h3>
+            <p>Descrição: <input type="text" name="descricao" id="descricao"></p>
+            <p>Data: <input type="date" name="data" id="data"></p>
+            <p>Categria:
+                <select id="categoria">
+                    <option value="vazio"></option>
+                    <option value="mercado">Mercado</option>
+                    <option value="combustivel">Combustível</option>
+                    <option value="contas">Contas fixas</option>
+                </select>
+            </p>
+            <p>Valor: R$<input type="number" name="valor" id="valor"></p>
+            <button onclick="lancar()">Lançar</button>
+        </form>
+        <div id="historico">
+            <form id="lancados">
+                <h3>Histórico</h3>
+                <div class="lancado">
+                    <p>Compra no mercado</p>
+                    <button class="editar-lancado"><i class="fa-solid fa-pen"></i></button>
+                    <button class="apagar-lancado"><i class="fa-solid fa-delete-left"></i></button>
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2022, <a href="https://github.com/richard7dias" target="_blank">Richard Oliveira</a>.</p>
+    </footer>
+</body>
+
+</html>

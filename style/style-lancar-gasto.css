@@ -10,6 +10,8 @@
     --cor5: #;
     --cor6: #f3f3f3;
     --cor7: #e6e6e6;
+    --cor8: #08527d;
+    --cor9: #053653;
     --sombra: #0000003b;
 
     --fonte-logo: 'Julius Sans One', sans-serif;
@@ -68,7 +70,7 @@ nav>a:active {
     background-color: var(--cor6);
 }
 
-#relatorios {
+#lancar-gasto {
     background-color: white;
 }
 
@@ -90,20 +92,73 @@ main {
     background-color: white;
 }
 
-#gastos-gerais {
-    display: inline-block;
-    width: 49%;
-    height: 300px;
-    text-align: center;
-    padding-top: 10px;
+button {
+    padding: 0.3rem 0.6rem;
+    background-color: var(--cor2);
+    color: white;
+    border: 1px solid var(--cor7);
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-#totais {
+button>i {
+    pointer-events: none;
+}
+
+button:hover {
+    background-color: var(--cor8);
+    transition: 0.2s;
+}
+
+button:active {
+    background-color: var(--cor8);
+    transition: 0.2s;
+    font-size: 0.98rem;
+}
+
+input,
+select {
+    padding-left: 0.5rem;
+    border-radius: 5px;
+    border: .1rem solid var(--cor9);
+    color: var(--cor9);
+    margin-left: .2rem;
+    width: 50%;
+}
+
+#esquerda {
     display: inline-block;
     width: 49%;
+}
+
+#lancamento {
     height: 300px;
-    text-align: center;
+    text-align: justify;
     padding-top: 10px;
+    display: inline-block;
+}
+
+#lancamento>p,
+#lancamento>button {
+    margin-top: 10px;
+}
+
+#historico {
+    display: inline-block;
+
+}
+
+.lancado {
+    display: flex;
+    margin-top: 20px;
+}
+
+.lancado>button {
+    margin-left: 0.3rem;
 }
 
 footer {

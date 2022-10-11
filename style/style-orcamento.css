@@ -5,9 +5,9 @@
 :root {
     --cor1: #0A37CC;
     --cor2: #096FAB;
-    --cor3: #09AB61;
-    --cor4: #00C3BD;
-    --cor5: #00C717;
+    --cor3: #;
+    --cor4: #;
+    --cor5: #;
     --cor6: #f3f3f3;
     --cor7: #e6e6e6;
     --sombra: #0000003b;
@@ -19,6 +19,12 @@
 * {
     margin: 0px;
     padding: 0px;
+    font-family: var(--fonte-padrao);
+}
+
+body {
+    background-color: var(--cor6);
+    color: var(--cor2);
 }
 
 header {
@@ -62,7 +68,7 @@ nav>a:active {
     background-color: var(--cor6);
 }
 
-#mes-atual {
+#orcamento {
     background-color: white;
 }
 
@@ -71,10 +77,6 @@ nav>a:active {
     border-radius: 20px 20px 0px 0px;
     padding: 10px 20px 10px 20px;
     text-decoration: none;
-}
-
-#sair {
-    margin-left: 390px;
 }
 
 main {
@@ -88,30 +90,12 @@ main {
     background-color: white;
 }
 
-#lancamento {
-    display: inline-block;
-    width: 49%;
-    height: 300px;
-    text-align: justify;
-    padding-top: 10px;
-}
-
-#orcamento {
+#orcamento-main {
     display: inline-block;
     width: 49%;
     height: 300px;
     text-align: center;
     padding-top: 10px;
-}
-
-#flista {
-    width: 100%;
-}
-
-body {
-    font-family: var(--fonte-padrao);
-    background-color: var(--cor6);
-    color: var(--cor2);
 }
 
 footer {
@@ -132,6 +116,5 @@ footer a {
 }
 
 footer a:hover {
-    color: var(--cor1);
     text-decoration: underline;
 }
