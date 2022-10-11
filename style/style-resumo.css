@@ -30,10 +30,10 @@ header {
     box-shadow: 0px 0px 60px -20px var(--sombra);
 }
 
-header>h1 {
-    font-family: var(--fonte-logo);
-    text-align: center;
-    font-size: 3em;
+#logotipo {
+    max-width: 250px;
+    display: block;
+    margin: auto;
 }
 
 header>p {
@@ -66,11 +66,15 @@ nav>a:active {
     background-color: white;
 }
 
-.menus {
+.menu {
     background-color: var(--cor7);
     border-radius: 20px 20px 0px 0px;
     padding: 10px 20px 10px 20px;
     text-decoration: none;
+}
+
+#sair {
+    margin-left: 390px;
 }
 
 main {
