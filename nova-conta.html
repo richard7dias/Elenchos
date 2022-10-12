@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elenchos - Login</title>
-    <link rel="stylesheet" href="style/style-login.css">
+    <title>Elenchos - Nova conta</title>
+    <link rel="stylesheet" href="style/style-nova-conta.css">
     <link rel="shortcut icon" href="./imagens/favicon.ico" type="image/x-icon">
-    <script src="script/script-login.js" defer></script>
+    <script src="script/script-nova-conta.js" defer></script>
 </head>
 
 <body>
@@ -18,17 +18,15 @@
             <p>Controle de finanças pessoais</p>
         </section>
         <form>
-            <p>Login</p>
-            <input type="text" placeholder=" Email" id="login">
+            <p>Nova conta</p>
+            <input type="text" placeholder=" Nome" id="nome">
+            <input type="text" placeholder=" Sobrenome" id="sobrenome">
+            <input type="text" placeholder=" Email" id="email">
             <input type="password" placeholder=" Senha" id="senha">
-            <button type="submit" onclick="logar(); return false">Entrar</button>
-            <div id="res"></div>
+            <input type="password" placeholder=" Confirme sua senha" id="conf-senha">
+            <button type="submit" onclick="cadastro()">Cadastrar</button>
         </form>
-        <hr>
-        <section id="nova-conta">
-            <p>Ainda não tem login?</p>
-            <a href="nova-conta.html"><button>Criar nova conta</button></a>
-        </section>
+        <div id="msg"></div>
     </main>
     <footer>
         <p>&copy; 2022 - <a href="https://github.com/richard7dias" target="_blank">Richard Oliveira</a></p>
