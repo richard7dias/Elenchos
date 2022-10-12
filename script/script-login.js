@@ -1,10 +1,11 @@
-function logar() {
-    let login = document.getElementById('login').value;
-    let senha = document.getElementById('senha').value;
+let login = document.getElementById('login')
+let senha = document.getElementById('senha')
+let res = document.getElementById('res')
 
-    if (login == 'admin' && senha == 'admin') {
+function logar() {
+    if (login.value == 'admin' && senha.value == 'admin') {
         location.href = 'resumo.html'
     } else {
-        alert('Usuário e/ou senha incorretos!')
+        res.innerHTML = 'Usuário e/ou senha incorretos!'
     }
 }

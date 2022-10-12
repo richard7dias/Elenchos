@@ -49,15 +49,10 @@ section {
     text-align: center;
 }
 
-form {
-    width: 300px;
-    margin: auto;
-    text-align: center;
-    margin-bottom: 30px;
-}
 
 form>p {
     font-weight: bold;
+    text-align: center;
 }
 
 input {
@@ -71,26 +66,8 @@ input {
     background-color: var(--cor4);
 }
 
-a {
-    text-decoration: none;
-}
-
-#res {
-    color: red;
-}
-
-footer {
-    margin-top: 20px;
+#msg {
     text-align: center;
-}
-
-footer a {
-    text-decoration: none;
-    color: var(--cor2);
-}
-
-footer a:hover {
-    text-decoration: underline;
 }
 
 button {
@@ -126,4 +103,18 @@ button:active {
 #nova-conta>p {
     font-weight: bold;
     margin-top: 20px;
+}
+
+footer {
+    margin-top: 20px;
+    text-align: center;
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--cor2);
+}
+
+footer a:hover {
+    text-decoration: underline;
 }

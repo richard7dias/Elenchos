@@ -6,7 +6,7 @@
     --cor1: #0A37CC;
     --cor2: #096FAB;
     --cor3: #;
-    --cor4: #;
+    --cor4: #e7f0ff;
     --cor5: #;
     --cor6: #f3f3f3;
     --cor7: #e6e6e6;
@@ -92,6 +92,41 @@ main {
     background-color: white;
 }
 
+#lancamento {
+    text-align: justify;
+    display: inline-block;
+    width: 300px;
+}
+
+#lancamento>p {
+    margin-top: 10px;
+    width: 100%;
+}
+
+#lancamento>button {
+    margin-top: 10px;
+    width: 100%;
+}
+
+#historico {
+    display: inline-block;
+    margin-left: 40px;
+    position: absolute;
+}
+
+.lancado {
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-around;
+    border-bottom: 2px solid var(--cor7);
+    padding-bottom: 10px;
+    transition: 0.2s;
+}
+
+.lancado>button {
+    margin-left: 0.3rem;
+}
+
 button {
     padding: 0.3rem 0.6rem;
     background-color: var(--cor2);
@@ -117,48 +152,18 @@ button:hover {
 button:active {
     background-color: var(--cor8);
     transition: 0.2s;
-    font-size: 0.98rem;
+    font-size: 0.9rem;
 }
 
 input,
 select {
     padding-left: 0.5rem;
     border-radius: 5px;
-    border: .1rem solid var(--cor9);
+    border: none;
     color: var(--cor9);
     margin-left: .2rem;
     width: 50%;
-}
-
-#esquerda {
-    display: inline-block;
-    width: 49%;
-}
-
-#lancamento {
-    height: 300px;
-    text-align: justify;
-    padding-top: 10px;
-    display: inline-block;
-}
-
-#lancamento>p,
-#lancamento>button {
-    margin-top: 10px;
-}
-
-#historico {
-    display: inline-block;
-
-}
-
-.lancado {
-    display: flex;
-    margin-top: 20px;
-}
-
-.lancado>button {
-    margin-left: 0.3rem;
+    background-color: var(--cor4);
 }
 
 footer {

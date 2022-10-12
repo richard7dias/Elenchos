@@ -29,17 +29,17 @@
     <main>
         <form id="lancamento">
             <h3>Lançar gasto</h3>
-            <p>Descrição: <input type="text" name="descricao" id="descricao"></p>
-            <p>Data: <input type="date" name="data" id="data"></p>
+            <p>Data: <input type="date" class="input-caixa" id="data"></p>
+            <p>Descrição: <input type="text" class="input-caixa" id="descricao"></p>
             <p>Categria:
-                <select id="categoria">
+                <select id="categoria" class="input-caixa">
                     <option value="vazio"></option>
                     <option value="mercado">Mercado</option>
                     <option value="combustivel">Combustível</option>
                     <option value="contas">Contas fixas</option>
                 </select>
             </p>
-            <p>Valor: R$<input type="number" name="valor" id="valor"></p>
+            <p>Valor: <input type="number" class="input-caixa" id="valor"></p>
             <button onclick="lancar()">Lançar</button>
         </form>
         <div id="historico">
