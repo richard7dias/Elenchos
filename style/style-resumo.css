@@ -14,10 +14,14 @@
 
 #saldos {
     display: inline-block;
-    width: 49%;
+    width: 45%;
+}
+
+#saldos>table{
+    float:right;
 }
 
 #gastos {
     display: inline-block;
-    width: 49%;
+    width: 45%;
 }
