@@ -4,9 +4,9 @@
 :root {
     --cor1: #0A37CC;
     --cor2: #096FAB;
-    --cor3: #;
+    --cor3: #a90000;
     --cor4: #e7f0ff;
-    --cor5: #;
+    --cor5: #d20000;
     --cor6: #f3f3f3;
     --cor7: #e6e6e6;
     --cor8: #08527d;
@@ -28,12 +28,62 @@ body {
 }
 
 header {
+    margin: auto;
+    margin-top: 10px;
+    max-width: 900px;
+    min-width: 500px;
+}
+
+#barra-login {
+    padding: 10px;
+    top: 0;
+    border-radius: 20px 20px 0px 0px;
+    background-color: var(--cor2);
+    color: white;
+    /*transition: all 0.5s ease;*/
+    box-shadow: 0px 0px 60px -20px var(--sombra);
+}
+
+#saudacao {
+    display: inline-block;
+    margin-top: 3px;
+}
+
+#sair {
+    display: flex;
+    float: right;
+    margin-right: 10px;
+    padding: 0.3rem 0.6rem;
+    background-color: var(--cor3);
+    color: white;
+    width: 40px;
+    border-radius: 10px;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+}
+
+#sair>a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+#sair:hover {
+    background-color: var(--cor5);
+    transition: 0.2s;
+}
+
+#sair:active {
+    background-color: var(--cor9);
+    transition: 0.2s;
+}
+
+#cabecalho {
     padding: 20px;
+    padding-top: 10px;
     background-color: white;
     border-radius: 0px 0px 20px 20px;
-    min-width: 400px;
-    max-width: 1000px;
-    margin: auto;
     box-shadow: 0px 0px 60px -20px var(--sombra);
 }
 
@@ -43,22 +93,14 @@ header {
     margin: auto;
 }
 
-header>p {
+#cabecalho>p {
     text-align: center;
 }
 
-aside {
-    padding: 20px;
-    width: 10%;
-    position: fixed;
-    bottom: 10%;
-    top: 10%;
-    left: 0;
-    background-color: var(--cor2);
-    color: white;
-    transition: all 0.5s ease;
-    border-radius: 0 20px 20px 0;
-    box-shadow: 0px 0px 60px -20px var(--sombra);
+#conteudo {
+    margin: auto;
+    max-width: 900px;
+    min-width: 300px;
 }
 
 nav {
@@ -92,10 +134,7 @@ nav>a:active {
 
 main {
     padding: 20px;
-    min-width: 400px;
-    max-width: 1000px;
-    margin: auto;
-    border-radius: 20px;
+    border-radius: 0 20px 20px 20px;
     box-shadow: 0px 20px 60px -20px var(--sombra);
     background-color: white;
 }

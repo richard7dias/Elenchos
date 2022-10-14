@@ -17,17 +17,17 @@
             <img src="imagens/elenchos-logotipo.png" alt="Elenchos" id="logotipo">
             <p>Controle de finanças pessoais</p>
         </section>
-        <form>
+        <form action="config/login.php" method="POST">
             <p>Login</p>
-            <input type="text" placeholder=" Email" id="login">
-            <input type="password" placeholder=" Senha" id="senha">
-            <button type="submit" onclick="logar(); return false">Entrar</button>
-            <div id="res"></div>
+            <input type="text" name="email" placeholder=" Email" id="login">
+            <input type="password" name="senha" placeholder=" Senha" id="senha">
+            <input type="submit" name="submit" class="botoes" id="entrar" value="Entrar"></input>
         </form>
+        <div id="res"></div>
         <hr>
         <section id="nova-conta">
             <p>Ainda não tem login?</p>
-            <a href="nova-conta.php"><button>Criar nova conta</button></a>
+            <a href="nova-conta.php"><button class="botoes" id="novaconta">Criar nova conta</button></a>
         </section>
     </main>
     <footer>

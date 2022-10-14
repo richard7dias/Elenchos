@@ -37,8 +37,8 @@ body {
 main {
     padding: 20px;
     width: 300px;
-    margin-top: 50px !important;
     margin: auto;
+    margin-top: 50px !important;
     border-radius: 20px;
     box-shadow: 0px 20px 60px -20px var(--sombra);
     background-color: white;
@@ -60,7 +60,8 @@ form>p {
     font-weight: bold;
 }
 
-input {
+#login,
+#senha {
     display: block;
     margin: 10px auto;
     width: 237px;
@@ -93,12 +94,10 @@ footer a:hover {
     text-decoration: underline;
 }
 
-button {
-    display: block;
+.botoes {
     margin: 10px auto;
     width: 250px;
-    height: 30px;
-    padding: 1.1rem 0.6rem;
+    height: 38px;
     font-weight: bold;
     background-color: var(--cor2);
     color: white;
@@ -111,12 +110,12 @@ button {
     align-items: center;
 }
 
-button:hover {
+.botoes:hover {
     background-color: var(--cor8);
     transition: 0.2s;
 }
 
-button:active {
+.botoes:active {
     background-color: var(--cor8);
     transition: 0.2s;
     width: 240px;
