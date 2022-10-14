@@ -17,11 +17,43 @@
     width: 45%;
 }
 
-#saldos>table{
-    float:right;
+#saldos>table {
+    float: right;
 }
 
 #gastos {
     display: inline-block;
     width: 45%;
+}
+
+
+.tabela {
+    width: 250px;
+    border-collapse: collapse;
+}
+
+.tabela>caption {
+    font-weight: bold;
+    padding: 10px;
+}
+
+
+.tabela>thead {
+    background-color: var(--cor2);
+    color: white;
+}
+
+td, th {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.tabela>tbody>tr:nth-child(even) {
+    background-color: aliceblue;
+}
+
+.tabela>tfoot {
+    font-weight: bold;
+    color: white;
+    background-color: var(--cor2);
 }

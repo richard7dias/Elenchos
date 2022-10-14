@@ -1,13 +1,13 @@
 <?php
 
 if (isset($_POST['submit'])) {
-    /*
+    
     print_r($_POST['nome']);
     print_r($_POST['sobrenome']);
     print_r($_POST['email']);
     print_r($_POST['senha']);
     print_r($_POST['conf-senha']);
-    */
+    
 
     include_once('config/conexao.php');
     $nome = $_POST['nome'];
@@ -45,7 +45,7 @@ if (isset($_POST['submit'])) {
             <input type="text" name="sobrenome" placeholder=" Sobrenome" id="sobrenome" required>
             <input type="text" name="email" placeholder=" Email" id="email" required>
             <input type="password" name="senha" placeholder=" Crie uma senha" id="senha" required>
-            <button type="submit" name="submit" onclick="cadastro()">Cadastrar</button>
+            <button type="submit" name="submit">Cadastrar</button>
         </form>
         <a href="index.php" id="fazer-login">
             <p>Fazer login</p>

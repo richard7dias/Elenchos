@@ -3,8 +3,7 @@
 }
 
 #lancamento {
-    text-align: justify;
-    display: inline-block;
+    margin: auto;
     width: 300px;
 }
 
@@ -19,18 +18,14 @@
 }
 
 #historico {
-    display: inline-block;
+    margin: auto;
     margin-left: 40px;
-    position: absolute;
+    margin-top: 30px;
+    align-items: center;
 }
 
 .lancado {
-    display: flex;
-    margin-top: 20px;
-    justify-content: space-around;
-    border-bottom: 2px solid var(--cor7);
-    padding-bottom: 10px;
-    transition: 0.2s;
+    margin-top: 10px;
 }
 
 .lancado>button {
@@ -77,6 +72,33 @@ select {
     float: right;
 }
 
-select {
-    width: 69.5%;
+.tabela {
+    width: 250px;
+    border-collapse: collapse;
+}
+
+.tabela>caption {
+    font-weight: bold;
+    padding: 10px;
+}
+
+.tabela>thead {
+    background-color: var(--cor2);
+    color: white;
+}
+
+td,
+th {
+    border: 1px solid var(--cor4);
+    padding: 5px 10px;
+}
+
+.tabela>tbody>tr:nth-child(even) {
+    background-color: aliceblue;
+}
+
+.tabela>tfoot {
+    font-weight: bold;
+    color: white;
+    background-color: var(--cor2);
 }

@@ -52,7 +52,7 @@ $logado = $_SESSION['email'];
         <main>
             <div>
                 <div id="saldos">
-                    <table>
+                    <table class="tabela">
                         <caption>Saldos</caption>
                         <thead>
                             <th>Conta</th>
@@ -77,7 +77,7 @@ $logado = $_SESSION['email'];
                     </table>
                 </div>
                 <div id="gastos">
-                    <table>
+                    <table class="tabela">
                         <caption>Gastos</caption>
                         <thead>
                             <th>Descrição</th>
