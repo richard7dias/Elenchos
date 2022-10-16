@@ -50,7 +50,10 @@ $logado = $_SESSION['email'];
             <a href="relatorios.php" class="menu" id="relatorios">Relatórios</a>
         </nav>
         <main>
-            <div>
+            <div id="caixa">
+                <p>Caixa atual: R$300,00</p>
+            </div>
+            <div id="tabelas">
                 <div id="saldos">
                     <table class="tabela">
                         <caption>Saldos</caption>
@@ -101,9 +104,6 @@ $logado = $_SESSION['email'];
                         </tfoot>
                     </table>
                 </div>
-            </div>
-            <div id="caixa">
-                <p>Caixa atual: R$300,00</p>
             </div>
         </main>
     </div>

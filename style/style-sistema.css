@@ -12,20 +12,9 @@
     font-weight: bold;
 }
 
-#saldos {
+#gastos, #saldos {
     display: inline-block;
-    width: 45%;
 }
-
-#saldos>table {
-    float: right;
-}
-
-#gastos {
-    display: inline-block;
-    width: 45%;
-}
-
 
 .tabela {
     width: 250px;

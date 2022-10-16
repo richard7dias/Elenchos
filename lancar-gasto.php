@@ -71,7 +71,7 @@ $result = $conexao->query($sql);
                     </select>
                 </p>
                 <p>Valor: <input type="number" name="valor" class="input-caixa" id="valor"></p>
-                <button type="submit" name="submit">Lançar</button>
+                <button type="submit" name="submit" id="btn-lancar">Lançar</button>
             </form>
             <div id="historico">
                 <form id="lancados">
@@ -84,7 +84,7 @@ $result = $conexao->query($sql);
                                     <th>Descrição</th>
                                     <th>Categoria</th>
                                     <th>Valor</th>
-                                    <th>...</th>
+                                    <th>..............</th>
                                     </th>
                                 </tr>
                             </thead>
@@ -96,17 +96,12 @@ $result = $conexao->query($sql);
                                     echo "<td>" . $user_data['descricao'] . "</td>";
                                     echo "<td>" . $user_data['categoria'] . "</td>";
                                     echo "<td>" . $user_data['valor'] . "</td>";
-                                    echo "<td>botoes</td>";
+                                    echo "<td><button class='icon'><a href='edit.php?=$user_data[id]' class='link'><i class='fa-solid fa-pen'></i></a></a></button><button class='icon'><i class='fa-solid fa-delete-left'></i></button></td>";
                                     echo "<tr>";
                                 }
                                 ?>
                             </tbody>
                         </table>
-                        <!--
-                        <p>Compra no mercado</p>
-                        <button class="editar-lancado"><i class="fa-solid fa-pen"></i></button>
-                        <button class="apagar-lancado"><i class="fa-solid fa-delete-left"></i></button>
-                        -->
                     </div>
                 </form>
             </div>

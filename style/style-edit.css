@@ -1,0 +1,122 @@
+#janela-edit {
+    margin: auto;
+    width: 340px;
+    height: 240px;
+    margin-top: 120px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 0px 60px -20px var(--sombra);
+}
+
+#barra-edit {
+    display: flex;
+    padding: 10px;
+    background-color: var(--cor2);
+    color: white;
+    border-radius: 20px 20px 0px 0px;
+}
+
+#fechar {
+    display: flex;
+    margin-right: 10px;
+    padding: 0.3rem 0.6rem;
+    background-color: var(--cor3);
+    color: white;
+    width: 40px;
+    border-radius: 10px;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon {
+    color: white;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+.icon>i {
+    pointer-events: none;
+}
+
+#fechar:hover {
+    background-color: var(--cor5);
+    transition: 0.2s;
+}
+
+#fechar:active {
+    background-color: var(--cor9);
+    transition: 0.2s;
+}
+
+body {
+    background-color: rgba(0, 0, 0, 0.5) !important;
+}
+
+#lancar-gasto {
+    background-color: white;
+}
+
+#formulario {
+    width: 300px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#lancamento {
+    width: 300px;
+}
+
+#lancamento>p,
+#formulario>p {
+    margin-top: 10px;
+}
+
+#lancamento>button,
+#formulario>button {
+    margin-top: 10px;
+    width: 100%;
+}
+
+#btn-lancar,
+#btn-editar {
+    padding: 0.3rem 0.6rem;
+    background-color: var(--cor2);
+    color: white;
+    border: 1px solid var(--cor7);
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#btn-lancar:hover,
+#btn-editar:hover {
+    background-color: var(--cor8);
+    transition: 0.2s;
+}
+
+#btn-lancar:active,
+#btn-editar:active {
+    background-color: var(--cor8);
+    transition: 0.2s;
+    font-size: 0.9rem;
+}
+
+input,
+select {
+    padding-left: 0.5rem;
+    border-radius: 5px;
+    border: none;
+    color: var(--cor9);
+    width: 200px;
+    background-color: var(--cor4);
+    float: right;
+}
+
+select {
+    width: 208px;
+}
